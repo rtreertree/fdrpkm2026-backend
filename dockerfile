@@ -35,7 +35,6 @@ ENV NODE_ENV=production
 # Make sure src/config/env.ts reads process.env.PORT (falling back to 8080)
 # and that the Elysia app calls .listen(Number(process.env.PORT) || 8080).
 ENV PORT=8080
-ENV TEST=FALSE
 
 # Run as a non-root user
 RUN addgroup -S app && adduser -S app -G app
